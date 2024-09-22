@@ -1,3 +1,9 @@
+import subprocess
+import sys
+
+# Install pandas from within a Python script
+subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas"])
+
 import pandas as pd
 
 def get_feature_and_target(data_frame, column_of_interest):    
